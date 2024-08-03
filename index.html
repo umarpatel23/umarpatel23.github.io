@@ -165,6 +165,13 @@
             box-sizing: border-box;
         }
 
+        .bio-detailed figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .bio-detailed .text {
             flex: 2;
             padding: 0 20px;
@@ -178,6 +185,13 @@
         .bio-detailed img {
             width: 100%;
             height: auto;
+        }
+
+        figcaption {
+            color: #ccc; /* Light grey color for caption */
+            font-size: 0.8em; /* Smaller font size for caption */
+            padding: 5px; /* Padding around the caption */
+            text-align: center; /* Center align the caption text */
         }
     </style>
 </head>
@@ -226,9 +240,6 @@
         <div class="bio-detailed">
             <!--First Section-->
             <div class="section">
-                <!--<div class="image-left">
-            <img src="images/path_to_left_image1.jpg" alt="Description of left image">
-        </div>-->
                 <div class="text">
                     <p>
                         Before I began my graduate studies in computer science (with a focus in visual computing), I completed my undergrad at Stanford in 2023, where my long-lasting dual interest in problem solving and history led me to complete two degrees with a B.S. in Computer Science focusing in Artificial Intelligence alongside a B.A. in Archaeology.
@@ -237,24 +248,44 @@
                         As an AR/VR developer working in Unity 3D for the Oculus Quest, I look to develop immersive and highly engaging user experiences to help assist in educational and performing arts contexts. My past projects have included immersive experiences in contexts such as museum heritage, educational VR for subjects such as physics and geography, language learning, and even theater and improv performance. In all such experiences, I aim to incorporate LLM-assistants and high performing speech-to-text handlers that leverage AI to create more natural and seamless user experiences in wide-ranging applications and immersive contexts.
                     </p>
                 </div>
-                <div class="image-right">
+                <figure class="image-right">
                     <img src="images/vr_experimentation.jpg" alt="Description of right image">
-                </div>
+                    <figcaption>User-testing theater performance and education VR experiences.</figcaption>
+                </figure>
             </div>
             <!--More sections can be added in the same pattern-->
 
             <div class="section">
-                <div class="image-left">
+                <figure class="image-left">
                     <img src="images/xr_conference_2024.jpg" alt="Description of left image">
-                </div>
+                    <figcaption>Presenting an immersive French language learning experience at the Stanford XR Conference.</figcaption>
+                </figure>
                 <div class="text">
                     <p>
-                        Additionally, during my time as a research assistant for the Human-Computer Interaction lab, I delved into Apple’s new visionOS framework to develop multimodal interactive AR experiences for the Apple Vision Pro. I leveraged the visionOS framework optimizing for gaze, gestures, and voice recognition to develop more organic methods for user interaction with the world in AR contexts. I continued building spatial computing applications developing AR for visionOS at the David Rumsey Map Center, where I develop interactive map experiences for historical cityscapes overlayed with modern maps and data. Ultimately, I aim to continue exploring new frontiers of AR/VR development through all my research and development work.
+                        Additionally, during my time as a research assistant for the Human-Computer Interaction lab, I delved into Apple’s new visionOS framework to develop multimodal interactive AR experiences for the Apple Vision Pro. I leveraged the framework optimizing for gaze, gestures, and voice recognition to develop more organic methods for user interaction with the world in AR contexts. I continued building spatial computing applications for visionOS at the David Rumsey Map Center, where I develop interactive map experiences for historical cityscapes overlayed with modern maps and data. Ultimately, I aim to continue exploring new frontiers of AR/VR development through all my research and development work.
                     </p>
 
 
                 </div>
             </div>
+
+            <!--More sections can be added in the same pattern-->
+            <div class="section">
+                <div class="text">
+                    <p>
+                        Adjacent to XR development, I have also delved into iOS product design through developing user experiences on mobile platforms, including a study abroad application to help students get acquainted with their host city (as part of my time as the Oxford ambassador for the BING Overseas Study Program), and a social scavenger hunt platform made for college students. These applications utilize the MapKit API, incorporating data location services and map interactivity with mobile applications.
+                    </p>
+                    <p>
+                        Over the last several years at Stanford, I have also been working as a Data Science research assistant for the Center for Spatial and Textual Analysis, where I am working to develop robust vision encoder models that accurately recognize handwritten texts for non-western and low-resourced languages, particularly Arabic and Early Modern Ottoman. I always find joy in applying my skills in XR and machine learning development to fields that have historically been removed from the advancements of such technologies and tools, and it is certainly the most rewarding part of my work!
+                    </p>
+                </div>
+
+                <figure class="image-right">
+                    <img src="images/swift_genie_xr_presentation.jpg" alt="Description of right image">
+                    <figcaption>Presenting SwiftGenieXR, a multimodal visionOS framework for augmented reality.</figcaption>
+                </figure>  
+            </div>
+
         </div>
 
     </div>
