@@ -151,6 +151,35 @@
             margin-bottom: 20px;
         }
 
+        .bio-detailed .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* Ensures spacing between items */
+            margin-bottom: 20px;
+            
+        }
+
+        .bio-detailed .image-left {
+            flex: 1;
+            max-width: 150px;
+        }
+
+        .bio-detailed .image-right {
+            flex: 1;
+            max-width: 150px;
+        }
+
+        .bio-detailed .text {
+            flex: 2; /* Gives more space to the text */
+            padding-right: 20px; /* Adds padding around the text */
+        }
+
+        .bio-detailed img {
+            width: 100%; /* Makes the image responsive */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+
         
     </style>
 </head>
@@ -196,21 +225,34 @@
         </div>
 
 
-        <!--<div class="bio-detailed">-->
-            <!-- First Section -->
-            <!--<div class="section">-->
+        <div class="bio-detailed">
+            <!--First Section-->
+            <div class="section">
                 <!--<div class="image-left">
-                    <img src="images/path_to_left_image1.jpg" alt="Description of left image">
-                </div>-->
-                <!--<div class="text">
-                    <p>Your detailed bio paragraph here. This is where you elaborate on your background, projects, or any other relevant information.</p>
+            <img src="images/path_to_left_image1.jpg" alt="Description of left image">
+        </div>-->
+                <div class="text">
+                    <p>
+                        Before I began my graduate studies in computer science (with a focus in visual computing), I completed my undergrad at Stanford in 2023, where my long-lasting dual interest in problem solving and history led me to complete two degrees with a B.S. in Computer Science focusing in Artificial Intelligence alongside a B.A. in Archaeology.
+                    </p>
                 </div>
                 <div class="image-right">
                     <img src="images/vr_experimentation.jpg" alt="Description of right image">
                 </div>
-            </div>-->
-            <!-- More sections can be added in the same pattern -->
-        <!--</div>-->
+            </div>
+            <!--More sections can be added in the same pattern-->
+
+            <div class="section">
+                <div class="image-left">
+                    <img src="images/xr_conference_2024.jpg" alt="Description of left image">
+                </div>
+                <div class="text">
+                    <p>
+                        Describe your experience or further details here. This text will be aligned to the right of the image. Maybe discuss more about your research, projects, or other interests.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
