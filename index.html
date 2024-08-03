@@ -69,7 +69,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar Patel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -111,6 +111,47 @@
             height: 1px; /* Made the line thinner */
             margin: auto; /* This will center the line within the container */
         }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bio {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .bio-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .bio-image img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .bio-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .thin-line {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 0.5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -132,12 +173,45 @@
         <!-- Content of your website goes here -->
         <div class="content">
             <div class="bio">
-                <p>Here you can write your bio, detailing your experiences and interests in XR, UX development, and data science. This section helps visitors understand your background and expertise.</p>
+                <p>
+                    Hi, I’m Umar! I am currently finishing my Master’s in Computer Science at Stanford University. I’m an innovative XR/UX developer and Data Science researcher passionate about creating immersive and seamless user experiences in wide-ranging applications for both 2D and 3D contexts that leverage AI techniques for more naturally flowing human interaction. In addition to my work in VR/AR design, I also have experience working in Data Science and Product Design contexts, which you can read more about below or on the other pages on my site!
+                </p>
+                <p>
+                    In my free time, I love cooking and trying out new recipes, painting, and playing guitar (I am a huge Ed Sheeran fan).
+                </p>
+                <p>
+                    I am always happy to discuss anything related to my work (or even if it’s unrelated!), so please don’t hesitate to reach out!
+                </p>
+                Email: <a href="mailto:umar2023@stanford.edu">umar2023@stanford.edu</a> or <a href="#contact">here</a>.
+                <p>
             </div>
             <div class="bio-image">
-                <img src="images/umar_main" alt="Umar Patel">
+                <img src="images/umar_main.jpg" alt="Umar Patel">
             </div>
         </div>
+        <!-- Bio Content here-->
+        <div class="bio-section">
+            <h2>Bio</h2>
+            <div class="thin-line"></div>
+        </div>
+
+
+        <!--<div class="bio-detailed">-->
+            <!-- First Section -->
+            <!--<div class="section">-->
+                <!--<div class="image-left">
+                    <img src="images/path_to_left_image1.jpg" alt="Description of left image">
+                </div>-->
+                <!--<div class="text">
+                    <p>Your detailed bio paragraph here. This is where you elaborate on your background, projects, or any other relevant information.</p>
+                </div>
+                <div class="image-right">
+                    <img src="images/vr_experimentation.jpg" alt="Description of right image">
+                </div>
+            </div>-->
+            <!-- More sections can be added in the same pattern -->
+        <!--</div>-->
+
     </div>
 </body>
 </html>
