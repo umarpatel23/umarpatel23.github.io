@@ -130,12 +130,12 @@
             margin-top: 20px;
         }
 
-        .bio-image img {
-            max-width: 200px;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+            .bio-image img {
+                max-width: 200px;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
 
         .bio-section h2 {
             font-size: 24px;
@@ -156,29 +156,27 @@
             align-items: center;
             justify-content: space-around; /* Ensures spacing between items */
             margin-bottom: 20px;
-            
         }
 
-        .bio-detailed .image-left {
-            flex: 1;
-            max-width: 150px;
-        }
-
-        .bio-detailed .image-right {
+        .bio-detailed .image-left, .bio-detailed .image-right {
             flex: 1;
             max-width: 150px;
         }
 
         .bio-detailed .text {
             flex: 2; /* Gives more space to the text */
-            padding-right: 20px; /* Adds padding around the text */
+            padding: 0 20px; /* Adds padding around the text */
+        }
+
+        /* Ensure left padding when text follows an image on the left */
+        .bio-detailed .section .image-left + .text {
+            padding-left: 20px;
         }
 
         .bio-detailed img {
             width: 100%; /* Makes the image responsive */
             height: auto; /* Maintains aspect ratio */
         }
-
 
         
     </style>
@@ -235,6 +233,9 @@
                     <p>
                         Before I began my graduate studies in computer science (with a focus in visual computing), I completed my undergrad at Stanford in 2023, where my long-lasting dual interest in problem solving and history led me to complete two degrees with a B.S. in Computer Science focusing in Artificial Intelligence alongside a B.A. in Archaeology.
                     </p>
+                    <p>
+                        As an AR/VR developer working in Unity 3D for the Oculus Quest, I look to develop immersive and highly engaging user experiences to help assist in educational and performing arts contexts. My past projects have included immersive experiences in contexts such as museum heritage, educational VR for subjects such as physics and geography, language learning, and even theater and improv performance. In all such experiences, I aim to incorporate LLM-assistants and high performing speech-to-text handlers that leverage AI to create more natural and seamless user experiences in wide-ranging applications and immersive contexts.
+                    </p>
                 </div>
                 <div class="image-right">
                     <img src="images/vr_experimentation.jpg" alt="Description of right image">
@@ -248,8 +249,10 @@
                 </div>
                 <div class="text">
                     <p>
-                        Describe your experience or further details here. This text will be aligned to the right of the image. Maybe discuss more about your research, projects, or other interests.
+                        Additionally, during my time as a research assistant for the Human-Computer Interaction lab, I delved into Apple’s new visionOS framework to develop multimodal interactive AR experiences for the Apple Vision Pro. I leveraged the visionOS framework optimizing for gaze, gestures, and voice recognition to develop more organic methods for user interaction with the world in AR contexts. I continued building spatial computing applications developing AR for visionOS at the David Rumsey Map Center, where I develop interactive map experiences for historical cityscapes overlayed with modern maps and data. Ultimately, I aim to continue exploring new frontiers of AR/VR development through all my research and development work.
                     </p>
+
+
                 </div>
             </div>
         </div>
