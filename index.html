@@ -76,17 +76,17 @@
             padding: 0;
             background-color: black;
             color: white;
-            font-family: 'Roboto', sans-serif; /* Updated font family */
+            font-family: 'Roboto', sans-serif;
         }
 
         .container {
-            padding: 0 160px; /* Increased padding on the sides */
+            padding: 0 160px;
         }
 
         header {
             display: flex;
             justify-content: space-between;
-            padding: 20px 0; /* Removed horizontal padding here, adjusted in container */
+            padding: 20px 0;
             align-items: baseline;
         }
 
@@ -108,8 +108,8 @@
 
         .main-line {
             background-color: white;
-            height: 1px; /* Made the line thinner */
-            margin: auto; /* This will center the line within the container */
+            height: 1px;
+            margin: auto;
         }
 
         .content {
@@ -131,7 +131,7 @@
         }
 
             .bio-image img {
-                max-width: 200px;
+                max-width: 250px;
                 width: 100%;
                 height: auto;
                 display: block;
@@ -153,32 +153,32 @@
 
         .bio-detailed .section {
             display: flex;
-            align-items: center;
-            justify-content: space-around; /* Ensures spacing between items */
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
             margin-bottom: 20px;
         }
 
         .bio-detailed .image-left, .bio-detailed .image-right {
             flex: 1;
-            max-width: 150px;
+            max-width: 33%;
+            box-sizing: border-box;
         }
 
         .bio-detailed .text {
-            flex: 2; /* Gives more space to the text */
-            padding: 0 20px; /* Adds padding around the text */
+            flex: 2;
+            padding: 0 20px;
+            min-width: 300px;
         }
 
-        /* Ensure left padding when text follows an image on the left */
-        .bio-detailed .section .image-left + .text {
-            padding-left: 20px;
+        .bio-detailed .section .text:first-child {
+            padding-left: 0;
         }
 
         .bio-detailed img {
-            width: 100%; /* Makes the image responsive */
-            height: auto; /* Maintains aspect ratio */
+            width: 100%;
+            height: auto;
         }
-
-        
     </style>
 </head>
 <body>
