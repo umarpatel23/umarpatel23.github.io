@@ -205,23 +205,22 @@
             position: relative;
             max-width: 100%;
             overflow-x: auto; /* Hide anything outside the slider container */
-            overflow-y: hidden;
+            white-space: nowrap;
         }
 
         .slider {
             display: flex;
-            white-space: nowrap;
+            padding: 10px 0;
         }
 
         .slide {
             display: inline-block;
-            width: 250px;
+            width: 300px;
             margin-right: 20px; /* Center items vertically */
-            vertical-align: top;
-            position: relative;
+            background: #000;
+            overflow: hidden;
             flex-shrink: 0;
-
-            word-wrap: break-word;
+            vertical-align: top;
         }
 
         .slide img {
@@ -232,13 +231,12 @@
 
         .slide .caption {
             width: 100%;
-            text-align: center;
             color: white;
-            font-size: 16px;
-            padding: 5px 0;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
             box-sizing: border-box;
-            display: inline-block;
-            word-wrap: break-word
+            word-wrap: break-word;
         }
 
     </style>
@@ -346,22 +344,24 @@
             <div class="slider">
                 <div class="slide">
                     <img src="images/rowing.jpg" alt="Rowing Adventure">
-                    <div class="caption">Me rowing bow side for Brasenose College Boat Club during my time abroad at Oxford (November 2022)</div>
+                    <div class="caption">Me rowing for Brasenose College at Oxford.</div>
                 </div>
                 <div class="slide">
                     <img src="images/washington_monument.jpg" alt="Washington Monument">
-                    <div class="caption">Caption for Image 2</div>
+                    <div class="caption">Sizing up the Washington Monument.</div>
                 </div>
                 <div class="slide">
                     <img src="images/paint_with_friends.jpg" alt="Painting with Friends">
-                    <div class="caption">Caption for Image 3</div>
+                    <div class="caption">Painting with friends!</div>
                 </div>
                 <div class="slide">
                     <img src="images/me_with_shakespeare.jpg" alt="Me with Lego Shakespeare in London">
-                    <div class="caption">New Adventure</div>
+                    <div class="caption">Visiting Shakespeare in Leicester Square.</div>
                 </div>
             </div>
         </div>
+
+        <div class="thin-line"></div>
 
     </div>
 </body>
