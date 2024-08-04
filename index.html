@@ -130,12 +130,12 @@
             margin-top: 20px;
         }
 
-            .bio-image img {
-                max-width: 250px;
-                width: 100%;
-                height: auto;
-                display: block;
-            }
+        .bio-image img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
         .bio-section h2 {
             font-size: 24px;
@@ -193,6 +193,54 @@
             padding: 5px; /* Padding around the caption */
             text-align: center; /* Center align the caption text */
         }
+
+        .adventure-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            overflow-x: auto; /* Hide anything outside the slider container */
+            overflow-y: hidden;
+        }
+
+        .slider {
+            display: flex;
+            white-space: nowrap;
+        }
+
+        .slide {
+            display: inline-block;
+            width: 250px;
+            margin-right: 20px; /* Center items vertically */
+            vertical-align: top;
+            position: relative;
+            flex-shrink: 0;
+
+            word-wrap: break-word;
+        }
+
+        .slide img {
+            width: 100%; /* Adjust based on preference */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+
+        .slide .caption {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            padding: 5px 0;
+            box-sizing: border-box;
+            display: inline-block;
+            word-wrap: break-word
+        }
+
     </style>
 </head>
 <body>
@@ -283,9 +331,36 @@
                 <figure class="image-right">
                     <img src="images/swift_genie_xr_presentation.jpg" alt="Description of right image">
                     <figcaption>Presenting SwiftGenieXR, a multimodal visionOS framework for augmented reality.</figcaption>
-                </figure>  
+                </figure>
             </div>
 
+        </div>
+
+        <!--Other adventures content here-->
+        <div class="adventure-section">
+            <h2>My Other Adventures</h2>
+            <div class="thin-line"></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/rowing.jpg" alt="Rowing Adventure">
+                    <div class="caption">Me rowing bow side for Brasenose College Boat Club during my time abroad at Oxford (November 2022)</div>
+                </div>
+                <div class="slide">
+                    <img src="images/washington_monument.jpg" alt="Washington Monument">
+                    <div class="caption">Caption for Image 2</div>
+                </div>
+                <div class="slide">
+                    <img src="images/paint_with_friends.jpg" alt="Painting with Friends">
+                    <div class="caption">Caption for Image 3</div>
+                </div>
+                <div class="slide">
+                    <img src="images/me_with_shakespeare.jpg" alt="Me with Lego Shakespeare in London">
+                    <div class="caption">New Adventure</div>
+                </div>
+            </div>
         </div>
 
     </div>
