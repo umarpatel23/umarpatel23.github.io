@@ -221,17 +221,30 @@
             justify-content: center; /* Centers items horizontally */
             align-items: center; /* Centers items vertically */
             gap: 30px; /* Space between the items */
+            flex-wrap: wrap;
         }
 
         .footer-link, .footer-logo {
             text-decoration: none; /* Removes underline from links */
             color: #333; /* Darker text color for better contrast on light background */
             font-size: 16px; /* Set font size */
+            display: block;
         }
 
         .footer-logo {
             width: 40px; /* Adjust the size of the LinkedIn logo */
             height: auto; /* Maintain aspect ratio of the logo */
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column; /* Stack footer items vertically on smaller screens */
+                gap: 15px; /* Reduce gap for a tighter layout on small screens */
+            }
+
+            .footer-link {
+                font-size: 14px; /* Smaller font size for smaller screens */
+            }
         }
 
         /*CSS Styling Specifically for xr_development.html page*/
@@ -316,6 +329,24 @@
                 </div>
             </div>
             <!-- Repeat for other projects -->
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/language-learning-in-vr" target="_blank">
+                    <img src="images/xr_development_images/FrenchLanguageLearning.jpg" alt="Project 2">
+                </a>
+                <div class="project-description">
+                    <p>Description of Project 1. This project covers VR/AR development in the context of educational technology.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/umar-patel-333788193/" target="_blank">
+                <img src="images/linkedin_logo_3.jpg" alt="LinkedIn" class="footer-logo">
+            </a>
+            <a href="https://umarsprojects.myportfolio.com/" class="footer-link">Portfolio</a>
+            <a href="mailto:umar2023@stanford.edu" class="footer-link">umar2023@stanford.edu</a>
         </div>
 
 
