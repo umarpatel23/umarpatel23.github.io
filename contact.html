@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Patel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            padding: 0 160px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            align-items: baseline;
+        }
+
+        .subheading {
+            font-size: 1.05em;
+            font-weight: normal;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a {
+            padding: 5px 10px; /* Better tap targets for links */
+        }
+
+        @media (max-width: 768px) {
+            .container, header {
+                padding: 10px 20px; /* Smaller padding on smaller screens */
+            }
+
+            .subheading {
+                font-size: 0.9em; /* Smaller font size for subheading */
+            }
+
+            nav {
+                flex-direction: column; /* Stack navigation links vertically */
+                gap: 10px; /* Smaller gap for stacked links */
+            }
+
+            nav a {
+                font-size: 0.9em; /* Smaller font size for navigation links */
+            }
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.current {
+            color: #20E3E3;
+            text-decoration: underline;
+        }
+
+        nav a.current:hover {
+            text-decoration: underline;
+        }
+
+        .main-line {
+            background-color: white;
+            height: 1px;
+            margin: auto;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bio {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .bio-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .bio-image img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .bio-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .thin-line {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 0.5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .bio-detailed .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .bio-detailed .image-left, .bio-detailed .image-right {
+            flex: 1;
+            max-width: 33%;
+            box-sizing: border-box;
+        }
+
+        .bio-detailed figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bio-detailed .text {
+            flex: 2;
+            padding: 0 20px;
+            min-width: 300px;
+        }
+
+        .bio-detailed .section .text:first-child {
+            padding-left: 0;
+        }
+
+        .bio-detailed img {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            color: #ccc; /* Light grey color for caption */
+            font-size: 0.8em; /* Smaller font size for caption */
+            padding: 5px; /* Padding around the caption */
+            text-align: center; /* Center align the caption text */
+        }
+
+        .adventure-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            overflow-x: auto; /* Hide anything outside the slider container */
+            white-space: nowrap;
+        }
+
+        .slider {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        .slide {
+            display: inline-block;
+            width: 300px;
+            margin-right: 20px; /* Center items vertically */
+            background: #000;
+            overflow: hidden;
+            flex-shrink: 0;
+            vertical-align: top;
+        }
+
+        .slide img {
+            width: 100%; /* Adjust based on preference */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+
+        .slide .caption {
+            width: 100%;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            word-wrap: break-word;
+        }
+
+        .footer {
+            background-color: #20E3E3; /* Light gray background */
+            padding: 20px 0; /* Padding above and below the content */
+            text-align: center; /* Center-aligns the content */
+            display: flex; /* Uses flexbox for layout */
+            justify-content: center; /* Centers items horizontally */
+            align-items: center; /* Centers items vertically */
+            gap: 30px; /* Space between the items */
+        }
+
+        .footer-link, .footer-logo {
+            text-decoration: none; /* Removes underline from links */
+            color: #333; /* Darker text color for better contrast on light background */
+            font-size: 16px; /* Set font size */
+        }
+
+        .footer-logo {
+            width: 40px; /* Adjust the size of the LinkedIn logo */
+            height: auto; /* Maintain aspect ratio of the logo */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Umar Patel</h1>
+                <p class="subheading">XR/UX Developer & Data Science Researcher</p>
+            </div>
+            <nav>
+                <a href="index.html">About Me</a>
+                <a href="xr_development.html">XR Development</a>
+                <a href="data_science_ml.html">Data Science and ML</a>
+                <a href="ux_product_design.html">UX/Product Design</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html", class="current">Contact</a>
+            </nav>
+        </header>
+        <div class="main-line"></div>
+        <!--Content of page goes here-->
+    </div>
+</body>
+
+
+</html>
