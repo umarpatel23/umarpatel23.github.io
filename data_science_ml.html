@@ -246,6 +246,49 @@
             }
         }
 
+        .xr-header h1 {
+            font-size: 32px; /* Big text for the title */
+            color: white;
+            margin-bottom: 10px; /* Space between the title and the paragraph */
+        }
+
+        .xr-header p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px; /* Space before the projects start */
+        }
+
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between project items */
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center; /* Aligns image and text vertically */
+            gap: 30px; /* Space between image and description */
+        }
+
+            .project-item img {
+                width: 250px; /* Adjust size as needed */
+                height: auto;
+                border-radius: 8px; /* Optional: adds rounded corners to the images */
+            }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .project-item img {
+                width: 150px; /* Smaller size for mobile devices */
+            }
+        }
+
+        .project-description p {
+            color: white;
+            font-size: 16px; /* Smaller text for project descriptions */
+            max-width: 600px; /* Ensures text does not get too wide */
+        }
+
         .construction-notice {
             text-align: center;
             padding: 10px;
@@ -285,9 +328,70 @@
         <div class="main-line"></div>
         <!--Content of page goes here-->
 
-        <div class="construction-notice">
-            This page is still under construction. Please see attached links for my portfolio or LinkedIn for more details on development projects and work experience.
+        <div class="xr-header">
+            <h1>Data Science and Machine Learning Projects</h1>
+            <p>Here are a collection of my Data Science and Machine Learning projects. These will link to my portfolio, where I have other projects that may be of interest! Feel free to reach out if you have any questions!</p>
         </div>
+
+        <div class="projects-container">
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/digital-davinci" target="_blank">
+                    <img src="images/xr_development_images/DigitalDaVinci.jpg" alt="Project 1">
+                </a>
+                <div class="project-description">
+                    <p>This project’s aim is to assess the classification of paintings by genre and era, two non-context classifications of images through a convolutional neural network architecture for image classification.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/biomedical-cell-segmentation-model-comparison" target="_blank">
+                    <img src="images/xr_development_images/CellSegmentation.jpg" alt="Project 2">
+                </a>
+                <div class="project-description">
+                    <p>Training and Analyzing various U-Net and Attention U-Net mdoels for cell segmentation.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/ottoman-turkish-nlp" target="_blank">
+                    <img src="images/xr_development_images/OttomanTurkishNLP.jpg" alt="Project 3">
+                </a>
+                <div class="project-description">
+                    <p>Ottoman Turkish NLP.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/computer-vision-applications-on-regions-of-interest" target="_blank">
+                    <img src="images/xr_development_images/SLACProject.jpg" alt="Project 4">
+                </a>
+                <div class="project-description">
+                    <p>Developing and training autonomous computer vision models to detect and segment key regions of interest (ROI) from ceramic cross sections.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/questions-answering-with-deep-learning" target="_blank">
+                    <img src="images/xr_development_images/QuestionAnsweringDeepLearning.jpg" alt="Project 5">
+                </a>
+                <div class="project-description">
+                    <p>Building upon baseline Bidirectional Attention Flow Model to enhance Question-Answering using positional encoding and attention mechanisms.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/movie-recommendation-chatbot" target="_blank">
+                    <img src="images/xr_development_images/MovieRecommenderSystem.jpg" alt="Project 6">
+                </a>
+                <div class="project-description">
+                    <p>Using NLP techniques to develop a Movie Recommender chatbot.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+     
 
 
         <!--Footer-->
@@ -296,7 +400,7 @@
                 <img src="images/linkedin_logo_3.jpg" alt="LinkedIn" class="footer-logo">
             </a>
             <a href="https://umarsprojects.myportfolio.com/" class="footer-link">Portfolio</a>
-            <a href="mailto:umar2023@stanford.edu" class="footer-link">umar2023@stanford.edu</a>
+            <a href="mailto:umar2023@cs.stanford.edu" class="footer-link">umar2023@cs.stanford.edu</a>
         </div>
     </div>
 </body>

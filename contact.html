@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umar Patel</title>
+    <title>Umar Patel - Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
@@ -61,9 +61,9 @@
                 gap: 10px; /* Smaller gap for stacked links */
             }
 
-            nav a {
-                font-size: 0.9em; /* Smaller font size for navigation links */
-            }
+                nav a {
+                    font-size: 0.9em; /* Smaller font size for navigation links */
+                }
         }
 
         nav a:hover {
@@ -75,9 +75,9 @@
             text-decoration: underline;
         }
 
-        nav a.current:hover {
-            text-decoration: underline;
-        }
+            nav a.current:hover {
+                text-decoration: underline;
+            }
 
         .main-line {
             background-color: white;
@@ -85,132 +85,32 @@
             margin: auto;
         }
 
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .bio {
-            flex: 2;
-            margin-right: 20px;
-        }
-
-        .bio-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .bio-image img {
-            max-width: 250px;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .bio-section h2 {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
+        /* Contact Section */
+        .contact-section {
             margin-top: 40px;
         }
 
-        .thin-line {
-            background-color: rgba(255, 255, 255, 0.3);
-            height: 0.5px;
-            width: 100%;
-            margin-bottom: 20px;
-        }
+            .contact-section h2 {
+                color: #20E3E3;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
 
-        .bio-detailed .section {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .bio-detailed .image-left, .bio-detailed .image-right {
-            flex: 1;
-            max-width: 33%;
-            box-sizing: border-box;
-        }
-
-        .bio-detailed figure {
-            margin: 0;
+        .contact-info {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 10px;
         }
 
-        .bio-detailed .text {
-            flex: 2;
-            padding: 0 20px;
-            min-width: 300px;
-        }
+            .contact-info a {
+                color: #20E3E3;
+                font-size: 18px;
+                text-decoration: none;
+            }
 
-        .bio-detailed .section .text:first-child {
-            padding-left: 0;
-        }
-
-        .bio-detailed img {
-            width: 100%;
-            height: auto;
-        }
-
-        figcaption {
-            color: #ccc; /* Light grey color for caption */
-            font-size: 0.8em; /* Smaller font size for caption */
-            padding: 5px; /* Padding around the caption */
-            text-align: center; /* Center align the caption text */
-        }
-
-        .adventure-section h2 {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            margin-top: 40px;
-        }
-
-        .slider-container {
-            position: relative;
-            max-width: 100%;
-            overflow-x: auto; /* Hide anything outside the slider container */
-            white-space: nowrap;
-        }
-
-        .slider {
-            display: flex;
-            padding: 10px 0;
-        }
-
-        .slide {
-            display: inline-block;
-            width: 300px;
-            margin-right: 20px; /* Center items vertically */
-            background: #000;
-            overflow: hidden;
-            flex-shrink: 0;
-            vertical-align: top;
-        }
-
-        .slide img {
-            width: 100%; /* Adjust based on preference */
-            height: auto; /* Maintain aspect ratio */
-            display: block;
-        }
-
-        .slide .caption {
-            width: 100%;
-            color: white;
-            font-size: 14px;
-            text-align: center;
-            padding: 10px 0;
-            box-sizing: border-box;
-            word-wrap: break-word;
-        }
+                .contact-info a:hover {
+                    text-decoration: underline;
+                }
 
         .footer {
             background-color: #20E3E3; /* Light gray background */
@@ -245,26 +145,6 @@
                 font-size: 14px; /* Smaller font size for smaller screens */
             }
         }
-
-
-        .construction-notice {
-            text-align: center;
-            padding: 10px;
-            background-color: #444; /* Dark background for contrast */
-            color: #fff; /* White text for visibility */
-            font-size: 16px; /* Adequate font size for readability */
-            border: 1px dashed #888; /* Stylish dashed border */
-            margin: 20px 0; /* Spacing above and below the notice */
-        }
-
-        @media (max-width: 768px) {
-            .construction-notice {
-                font-size: 14px; /* Slightly smaller font on mobile for better fitting */
-                padding: 8px; /* Slightly less padding to save space */
-            }
-        }
-
-
     </style>
 
 </head>
@@ -281,14 +161,18 @@
                 <a href="data_science_ml.html">Data Science and ML</a>
                 <a href="ux_product_design.html">UX/Product Design</a>
                 <a href="resume.html">Resume</a>
-                <a href="contact.html" , class="current">Contact</a>
+                <a href="contact.html" class="current">Contact</a>
             </nav>
         </header>
         <div class="main-line"></div>
-        <!--Content of page goes here-->
 
-        <div class="construction-notice">
-            This page is still under construction. Please see attached links for my portfolio or LinkedIn for more details on development projects and work experience.
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:umar2023@cs.stanford.edu">umar2023@cs.stanford.edu</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/umar-patel-333788193/" target="_blank">Me on LinkedIn</a></p>
+            </div>
         </div>
 
         <!--Footer-->
@@ -297,10 +181,9 @@
                 <img src="images/linkedin_logo_3.jpg" alt="LinkedIn" class="footer-logo">
             </a>
             <a href="https://umarsprojects.myportfolio.com/" class="footer-link">Portfolio</a>
-            <a href="mailto:umar2023@stanford.edu" class="footer-link">umar2023@stanford.edu</a>
+            <a href="mailto:umar2023@cs.stanford.edu" class="footer-link">umar2023@cs.stanford.edu</a>
         </div>
     </div>
 </body>
-
 
 </html>

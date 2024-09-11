@@ -247,6 +247,49 @@
             }
         }
 
+        .xr-header h1 {
+            font-size: 32px; /* Big text for the title */
+            color: white;
+            margin-bottom: 10px; /* Space between the title and the paragraph */
+        }
+
+        .xr-header p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px; /* Space before the projects start */
+        }
+
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between project items */
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center; /* Aligns image and text vertically */
+            gap: 30px; /* Space between image and description */
+        }
+
+            .project-item img {
+                width: 250px; /* Adjust size as needed */
+                height: auto;
+                border-radius: 8px; /* Optional: adds rounded corners to the images */
+            }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .project-item img {
+                width: 150px; /* Smaller size for mobile devices */
+            }
+        }
+
+        .project-description p {
+            color: white;
+            font-size: 16px; /* Smaller text for project descriptions */
+            max-width: 600px; /* Ensures text does not get too wide */
+        }
+
         .construction-notice {
             text-align: center;
             padding: 10px;
@@ -285,9 +328,39 @@
         </header>
         <div class="main-line"></div>
         <!--Content of page goes here-->
+        <div class="xr-header">
+            <h1>User Experience (UX) and Product Design Projects</h1>
+            <p>Here are a collection of my UX and Product Design projects. These will link to my portfolio, where I have other projects that may be of interest! Feel free to reach out if you have any questions!</p>
+        </div>
 
-        <div class="construction-notice">
-            This page is still under construction. Please see attached links for my portfolio or LinkedIn for more details on development projects and work experience.
+        <div class="projects-container">
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/figma-design-for-vr-project" target="_blank">
+                    <img src="images/xr_development_images/figma1.jpg" alt="Project 1">
+                </a>
+                <div class="project-description">
+                    <p>This project outlines my planning and design process for my cockpit training simulator virtual reality experience. I used Figma to outline my app structure.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/scavenger-hunt-ios-app" target="_blank">
+                    <img src="images/xr_development_images/ScavengerHunt.jpg" alt="Project 2">
+                </a>
+                <div class="project-description">
+                    <p>This project was a mobile scavenger hunt platform I developed using SwiftUI and MapKit, allowing users to create, play, and comment on campus-based virtual scavenger hunts.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <a href="https://umarsprojects.myportfolio.com/personalized-travel-app" target="_blank">
+                    <img src="images/xr_development_images/StudyAbroad.jpg" alt="Project 3">
+                </a>
+                <div class="project-description">
+                    <p>This project was a mobile scavenger hunt platform I developed using SwiftUI and MapKit, allowing users to create, play, and comment on campus-based virtual scavenger hunts.</p>
+                </div>
+            </div>
+
         </div>
 
         <!--Footer-->
@@ -296,7 +369,7 @@
                 <img src="images/linkedin_logo_3.jpg" alt="LinkedIn" class="footer-logo">
             </a>
             <a href="https://umarsprojects.myportfolio.com/" class="footer-link">Portfolio</a>
-            <a href="mailto:umar2023@stanford.edu" class="footer-link">umar2023@stanford.edu</a>
+            <a href="mailto:umar2023@cs.stanford.edu" class="footer-link">umar2023@cs.stanford.edu</a>
         </div>
     </div>
 </body>
